@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="@android:color/white" android:id="@id/id_tip_double_bt_tl" android:background="@drawable/inner_dialog_shape_tl" android:paddingLeft="15.0dip" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="提示" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff333333" android:gravity="center|left|top" android:id="@id/id_tip_double_bt_content_tx" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:layout_marginBottom="20.0dip">
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/id_tip_double_bt_cancel_bt" android:background="@drawable/inner_dialog_sel_cancel_bt" android:layout_width="100.0dip" android:layout_height="40.0dip" android:text="取消" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/id_tip_double_bt_sure_bt" android:background="@drawable/inner_dialog_sel_sure_bt" android:layout_width="100.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="确定" />
+    </LinearLayout>
+</LinearLayout>

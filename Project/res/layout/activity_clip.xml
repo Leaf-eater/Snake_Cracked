@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wepie.snake.helper.clip.ClipImageLayout android:id="@id/clip_image_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/clip_tl" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <ImageView android:id="@id/clip_title_back_image" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/back_btn_normal" android:scaleType="centerInside" />
+        <TextView android:textSize="16.0dip" android:textColor="#ffffffff" android:gravity="center|right" android:id="@id/clip_title_right_text" android:paddingRight="14.0dip" android:layout_width="60.0dip" android:layout_height="fill_parent" android:text="使用" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

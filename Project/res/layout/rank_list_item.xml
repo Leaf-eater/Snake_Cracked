@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/dialog_back" android:layout_width="fill_parent" android:layout_height="34.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+        <ImageView android:id="@id/rank_list_num_icon" android:visibility="invisible" android:layout_width="23.0dip" android:layout_height="18.0dip" android:layout_marginLeft="20.0dip" android:scaleType="centerInside" android:layout_centerVertical="true" />
+        <TextView android:textSize="10.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/rank_list_item_numb" android:layout_width="23.0dip" android:layout_height="18.0dip" android:layout_marginLeft="20.0dip" android:text="" android:singleLine="true" android:layout_centerVertical="true" />
+        <com.wepie.snake.module.home.HeadIconView android:id="@id/rank_list_head_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="70.0dip" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color" android:gravity="left" android:id="@id/rank_list_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="119.0dip" android:text=" " android:singleLine="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/text_color" android:gravity="left" android:id="@id/rank_list_item_kill" android:layout_width="86.0dip" android:layout_height="wrap_content" android:text="" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="123.0dip" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:gravity="center" android:background="@drawable/game_rank_bg" android:layout_width="123.0dip" android:layout_height="20.0dip" android:text="排行榜" />
+        <RelativeLayout android:background="@drawable/game_rank_bg" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="9.0sp" android:textColor="#ff566069" android:gravity="center" android:id="@id/game_rank_today_tl" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:text="今日最佳" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffff6a00" android:id="@id/game_rank_today_score_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginRight="3.0dip" android:text="" android:maxEms="7" android:singleLine="true" android:layout_below="@id/game_rank_today_tl" android:layout_alignParentRight="true" />
+            <TextView android:textSize="10.0sp" android:textColor="#ffff6a00" android:id="@id/game_rank_today_nick_tx" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:text="" android:singleLine="true" android:layout_toLeftOf="@id/game_rank_today_score_tx" android:layout_alignBottom="@id/game_rank_today_score_tx" />
+        </RelativeLayout>
+        <ListView android:id="@id/game_rank_listview" android:background="@drawable/game_rank_bg" android:layout_width="123.0dip" android:layout_height="140.0dip" android:layout_marginTop="2.0dip" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+    </LinearLayout>
+</RelativeLayout>

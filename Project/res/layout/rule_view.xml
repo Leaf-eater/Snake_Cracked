@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/rule_view_viewpager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/rule_view_back" android:padding="10.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/sel_back_bt" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

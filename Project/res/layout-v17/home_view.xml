@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_user_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="20.0dip" android:layout_marginStart="30.0dip">
+        <com.wepie.snake.module.home.HeadIconView android:id="@id/home_user_icon" android:layout_width="48.0dip" android:layout_height="48.0dip" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffff5758" android:ellipsize="end" android:id="@id/home_user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="14.0dip" android:text="游客176243" android:singleLine="true" android:layout_marginStart="10.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="30.0dip" android:layout_alignParentRight="true" android:layout_marginEnd="30.0dip" android:layout_alignParentEnd="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/home_share_bt" android:background="@drawable/home_share_bt_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/home_activity_planning_bt" android:background="@drawable/home_activity_bt_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:contentDescription="@null" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/home_setting_bt" android:background="@drawable/home_setting_bt_sel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:contentDescription="@null" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/home_bottom_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_alignParentBottom="true">
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/home_rule_bt" android:background="@drawable/home_role_bt_sel" android:layout_width="48.0dip" android:layout_height="67.0dip" android:contentDescription="@null" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/home_rank_bt" android:background="@drawable/home_rank_bt_sel" android:layout_width="48.0dip" android:layout_height="67.0dip" android:contentDescription="@null" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/home_skin_bt" android:background="@drawable/home_skin_bt_sel" android:layout_width="48.0dip" android:layout_height="67.0dip" android:contentDescription="@null" />
+        <Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <android.support.percent.PercentFrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_above="@id/home_bottom_container" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0.0dip" app:layout_heightPercent="62.5%" app:layout_marginTopPercent="25.0%">
+            <ImageView android:id="@id/home_endless_bt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_endless_bt_sel" android:scaleType="centerInside" android:contentDescription="@null" />
+            <Space android:layout_width="45.0dip" android:layout_height="fill_parent" />
+            <ImageView android:id="@id/home_limit_bt" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/home_challenge_bt_sel" android:scaleType="centerInside" android:contentDescription="@null" />
+        </LinearLayout>
+    </android.support.percent.PercentFrameLayout>
+</RelativeLayout>

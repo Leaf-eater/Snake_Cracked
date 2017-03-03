@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#70000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/dialog_view_add" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/dialog_view_hide" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_margin="15.0dip" android:src="@drawable/back_icon_normal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <de.hdodenhof.circleimageview.CircleImageView android:layout_gravity="center_horizontal" android:id="@id/head_icon_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/default_head_icon" app:civ_border_width="0.0dip" />
+    <ImageView android:id="@id/head_icon_mask_image" android:background="@drawable/shape_head_mask" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

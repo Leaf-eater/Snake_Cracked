@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="123.0dip" android:layout_height="14.0dip">
+        <TextView android:textSize="8.0dip" android:textColor="@color/game_rank_numb" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/game_rank_item_numb" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="1" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/game_rank_name" android:layout_gravity="center_vertical" android:id="@id/game_rank_item_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="郭焕文姑广告歌广告歌" android:singleLine="true" android:layout_toLeftOf="@id/game_rank_item_score" android:layout_toRightOf="@id/game_rank_item_numb" />
+        <TextView android:textSize="10.0sp" android:textColor="@color/game_rank_name" android:layout_gravity="center_vertical" android:id="@id/game_rank_item_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:text="999" android:maxEms="7" android:singleLine="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

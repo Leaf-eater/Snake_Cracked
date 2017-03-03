@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <com.wepie.snake.module.home.HeadIconView android:id="@id/modify_nick_avatar_image" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_centerHorizontal="true" />
+        <EditText android:textSize="14.0sp" android:textColor="#ff999999" android:id="@id/modify_nick_edit_tx" android:background="@drawable/solid_ffffff_corner_5dp" android:paddingLeft="10.0dip" android:layout_width="200.0dip" android:layout_height="30.0dip" android:layout_marginTop="10.0dip" android:hint="用户名" android:maxLength="12" android:layout_below="@id/modify_nick_avatar_image" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="9.0sp" android:textColor="#ffff5758" android:id="@id/modify_nick_error_description" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/modify_nick_edit_tx" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/modify_nick_confirm_bt" android:background="@drawable/sel_ff5959" android:layout_width="200.0dip" android:layout_height="48.0dip" android:layout_marginTop="36.0dip" android:text="完成" android:layout_below="@id/modify_nick_edit_tx" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

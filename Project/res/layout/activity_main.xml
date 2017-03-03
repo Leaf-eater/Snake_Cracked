@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.wepie.snake.module.game.SnakeSurfaceView android:id="@id/main_snake_surface_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.wepie.snake.module.game.GameInfoView android:id="@id/main_snake_game_info_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.wepie.snake.module.game.RouletteView android:id="@id/main_roulette_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <ImageView android:id="@id/main_speedup_bt" android:background="@drawable/speedup" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="40.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

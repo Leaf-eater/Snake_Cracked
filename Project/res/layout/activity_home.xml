@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_bg" android:scaleType="centerCrop" />
+    <com.wepie.snake.module.home.HomeView android:id="@id/activity_home_main_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:id="@id/activity_home_container_lay" android:visibility="invisible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/home_bg" android:scaleType="centerCrop" />
+        <com.wepie.snake.base.HomeContainerView android:id="@id/activity_home_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</RelativeLayout>

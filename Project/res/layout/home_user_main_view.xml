@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="532.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/user_main_title_lay" android:background="#ffff5758" android:layout_width="36.0dip" android:layout_height="63.0dip">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:src="@drawable/user_account_icon_white" />
+            <TextView android:textSize="12.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/account" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/user_main_content_lay" android:layout_width="450.0dip" android:layout_height="280.0dip" android:layout_toRightOf="@id/user_main_title_lay" android:layout_alignTop="@id/user_main_title_lay">
+            <com.wepie.snake.module.home.user.VisitorInfoView android:id="@id/user_main_visitor_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <com.wepie.snake.module.home.user.LoginInfoView android:id="@id/user_main_login_info_view" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/user_main_back_bt" android:padding="10.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/sel_back_bt" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

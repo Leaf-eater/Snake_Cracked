@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/rank_view_title" android:background="@drawable/rank_bg" android:layout_width="250.0dip" android:layout_height="30.0dip" android:layout_marginTop="30.0dip" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/rank_view_length_rank" android:background="@drawable/rank_bg_left" android:layout_width="125.0dip" android:layout_height="30.0dip" android:text="长度榜" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/title_red" android:gravity="center" android:id="@id/rank_view_kill_rank" android:layout_width="125.0dip" android:layout_height="30.0dip" android:text="击杀榜" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/rank_type_lay" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_centerVertical="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/rank_type_limit_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/rank_type_limit_icon" android:background="@drawable/game_type_icon_limit_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/game_type_bt_tx_color" android:layout_gravity="center_horizontal" android:id="@id/rank_type_limit_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="限时模式" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/rank_type_endless_lay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/rank_type_limit_lay" android:layout_centerHorizontal="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/rank_type_endless_icon" android:background="@drawable/game_type_icon_limit_press" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0dip" android:textColor="@color/game_type_bt_tx_color" android:layout_gravity="center_horizontal" android:id="@id/rank_type_endless_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="无尽模式" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/rank_view_list_title" android:background="@drawable/dialog_title_back" android:layout_width="fill_parent" android:layout_height="24.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="110.0dip" android:layout_toRightOf="@id/rank_type_lay" android:layout_below="@id/rank_view_title">
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:paddingLeft="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="排名" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="120.0dip" android:text="用户名" android:layout_centerVertical="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:gravity="center|left" android:id="@id/rank_view_title_kill" android:layout_width="38.0dip" android:layout_height="wrap_content" android:layout_marginRight="50.0dip" android:text="长度" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/rank_view_listview" android:background="@drawable/rank_list_bg" android:paddingBottom="0.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="30.0dip" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="1.0dip" android:layout_below="@id/rank_view_list_title" android:layout_alignLeft="@id/rank_view_list_title" android:layout_alignRight="@id/rank_view_list_title" />
+    <ImageView android:id="@id/rank_view_back" android:padding="10.0dip" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/sel_back_bt" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

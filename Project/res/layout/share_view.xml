@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/share_view_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/share_view_lay" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/share_view1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/umeng_socialize_wxcircle" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="朋友圈" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/share_view2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/umeng_socialize_wechat" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微信好友" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/share_view3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/umeng_socialize_qzone_on" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ空间" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/share_view4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/umeng_socialize_qq_on" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="QQ" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/share_view5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/umeng_socialize_sina_on" />
+            <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="微博" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/share_view_space_lay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/share_view_lay" />
+</RelativeLayout>

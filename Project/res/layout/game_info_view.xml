@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="10.0dip" android:textColor="#ff666666" android:id="@id/snake_length_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="长度：32" />
+    <TextView android:textSize="10.0dip" android:textColor="#ff666666" android:id="@id/snake_kill_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="击杀：0" android:layout_below="@id/snake_length_tx" android:layout_alignLeft="@id/snake_length_tx" android:layout_alignRight="@id/snake_length_tx" />
+    <TextView android:textSize="24.0dip" android:textColor="#ff666666" android:id="@id/snake_fps_tx" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="" android:layout_centerHorizontal="true" />
+    <com.wepie.snake.ui.GameRankView android:id="@id/snake_game_rank_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_alignParentRight="true" />
+    <com.wepie.snake.ui.GameOverView android:id="@id/snake_game_over_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/game_rank_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:id="@id/game_over_view_content" android:background="@drawable/dialog_back" android:layout_width="260.0dip" android:layout_height="152.0dip" android:layout_marginTop="30.0dip" android:layout_alignTop="@id/game_over_view_title">
+            <TextView android:textSize="16.0sp" android:textColor="@color/title_red" android:id="@id/game_over_view_length_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="长度" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="24.0sp" android:textColor="#ff333333" android:id="@id/game_over_view_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="12345" android:layout_below="@id/game_over_view_length_name" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/title_red" android:id="@id/game_over_view_kill_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="击杀" android:layout_below="@id/game_over_view_length" android:layout_centerHorizontal="true" />
+            <TextView android:textSize="24.0sp" android:textColor="#ff333333" android:id="@id/game_over_view_kill" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="12345" android:layout_below="@id/game_over_view_kill_name" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/game_over_revive_bt" android:background="@drawable/revive_bt_sel" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_below="@id/game_over_view_length" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:gravity="center" android:id="@id/game_over_view_title" android:background="@drawable/start_game_back" android:layout_width="180.0dip" android:layout_height="40.0dip" android:text="游戏结束" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/game_over_view_show" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/game_over_view_content">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/show_cion" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/title_red" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="炫耀" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/game_over_view_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/game_over_view_content" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/back_icon_green" />
+            <TextView android:textSize="14.0sp" android:textColor="#ff69c66d" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="返回" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/game_over_view_restart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/game_over_view_content" android:layout_alignRight="@id/game_over_view_content">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="8.0dip" android:src="@drawable/restart_icon" />
+            <TextView android:textSize="14.0sp" android:textColor="#fff3d14b" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="重来" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView android:id="@id/game_over_view_backicon" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:src="@drawable/back_icon_normal" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+</RelativeLayout>

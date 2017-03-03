@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/skin_cell_bg_shape" android:layout_width="98.0dip" android:layout_height="160.0dip">
+        <TextView android:textSize="10.0dip" android:textColor="#ffff5758" android:gravity="center" android:id="@id/skin_name_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="小蜜蜂" android:layout_centerHorizontal="true" />
+        <RelativeLayout android:id="@id/skin_bottom_lay" android:background="@drawable/skin_half_bottom_shape" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:background="@drawable/skin_price_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/skin_price_lay" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="13.0dip" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/skin_price_tx" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50" />
+                <ImageView android:layout_gravity="center_vertical" android:background="@drawable/skin_coin_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textColor="#ffffffff" android:gravity="center" android:id="@id/skin_own_tx" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已拥有" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/skin_icon_image" android:layout_width="50.0dip" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip" android:scaleType="centerInside" android:layout_above="@id/skin_bottom_lay" android:layout_below="@id/skin_name_tx" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/skin_in_use_image" android:background="@drawable/skin_in_use_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_marginRight="-1.0dip" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>
